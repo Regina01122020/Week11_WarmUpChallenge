@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Warm-up Challenge</title>
+    <style>
+        body{
+            height: 500px;
+            background-image: url('https://cdn.ravensburger.de/images/produktseiten/1024/14708_1.jpg');
+            background-size: cover;
+        }
+        #div{
+            border-style: solid;
+            background-color: lightseagreen;
+            margin: auto;
+            width: 400px;
+            padding: 20px;
+            display: table;
+        }
+        #div1{
+            border-style: dashed;
+            background-color: lightsalmon;
+            margin: auto;
+            width: 400px;
+            padding: 20px;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div">
+
+        <h2>Welcome to my warm-up challenge!</h2>
+        <p>My express app for week 11 is about pets. 
+        My favorite pet is a puppy, He's name Cody, I named him Cody because I love to code.
+        How about you, What's your favorite pet?</p>
+        <h4>Tell me about your favorite pet by filling the form below:</h4>
+        <div id="div1">
+            <form action="display" method="POST" id="myForm">
+                <p>Name of pet: <input type="text" id="name" name="name" required></p>
+                <p>Type of pet: <input type="text" id="type" name="type_of_pet" required></p>
+                <p>Colour of pet: <input type="text" id="colour" name="pet_colour" required></p>
+                <p>Reason for pet name: <input type="text" id="reason" name="reason_for_pet_name" required></p>
+                <br>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>   
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
